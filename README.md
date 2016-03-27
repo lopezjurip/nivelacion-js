@@ -1,5 +1,7 @@
 # nivelacion.js
 
+[![Build Status](https://travis-ci.org/mrpatiwi/nivelacion.js.svg?branch=master)](https://travis-ci.org/mrpatiwi/nivelacion.js)
+
 ## Setup
 
 Instalar [Node.js 5.x](https://nodejs.org) y luego:
