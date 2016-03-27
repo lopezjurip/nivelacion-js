@@ -1,0 +1,29 @@
+{
+  "name": "nivelacion.js",
+  "version": "1.0.0",
+  "description": "Repositorio para capacitar a mi grupo de Proyecto de Especialidad",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "inspector": "node-inspector -d 5858 -p 8080",
+    "live-reload": "nodemon --debug index.js",
+    "open-browser": "opn http://localhost:8080/?port=5858",
+    "debug": "npm run inspector & npm run open-browser & npm run live-reload",
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mrpatiwi/nivelacion.js.git"
+  },
+  "author": "Patricio López <patricio@lopezjuri.com> (https://lopezjuri.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mrpatiwi/nivelacion.js/issues"
+  },
+  "homepage": "https://github.com/mrpatiwi/nivelacion.js#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "morgan": "^1.7.0"
+  },
+  "devDependencies": {}
+}
