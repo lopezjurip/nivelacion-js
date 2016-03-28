@@ -25,5 +25,23 @@ describe('loading express', function () {
   })
 })
 
+describe('loading express 2', function () {
+  it('responds to /add', done => {
+    request(app)
+      .get('/add?a=100&b=99')
+      .expect(200)
+      .end((err, res) => {
+        expect(res.body.result).to.equal(199)
+        done()
+      })
+  })
+
+  it('404 everything else', done => {
+    request(app)
+      .get('/foo/bar')
+      .expect(404, done)
+  })
+})
+
 // TIP: To send query params use:
 //  .send({ key: 'value' })
