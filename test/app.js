@@ -8,12 +8,12 @@ const app = require('../app')
 
 
 describe('loading express', function () {
-  it('responds to /', done => {
+  it('responds to /add', done => {
     request(app)
-      .get('/')
+      .get('/add?a=123&b=432')
       .expect(200)
       .end((err, res) => {
-        expect(res.body.status).to.equal('on')
+        expect(res.body.result).to.equal(123+432)
         done()
       })
   })
