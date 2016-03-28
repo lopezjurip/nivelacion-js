@@ -23,6 +23,19 @@ describe('loading express', function () {
       .get('/foo/bar')
       .expect(404, done)
   })
+
+  it('probar suma ',done =>{
+    const a = 32
+    const b = 11
+    request(app)
+      .get('/add?a=32&b=11')
+      .expect(200)
+      .end((err, res) => {
+        console.log(res.body);
+        expect(res.body.result).to.equal(a + b)
+        done()
+      })
+  })
 })
 
 // TIP: To send query params use:
