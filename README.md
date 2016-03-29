@@ -1,6 +1,6 @@
 # nivelacion.js
 
-[![Build Status](https://travis-ci.org/mrpatiwi/nivelacion.js.svg?branch=master)](https://travis-ci.org/mrpatiwi/nivelacion.js)
+[![wercker status](https://app.wercker.com/status/e9ae72eaaa72b72b394d7fa66c6dc237/m "wercker status")](https://app.wercker.com/project/bykey/e9ae72eaaa72b72b394d7fa66c6dc237)
 
 ## Setup
 
