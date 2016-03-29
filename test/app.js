@@ -10,10 +10,10 @@ const app = require('../app')
 describe('loading express', function () {
   it('responds to /', done => {
     request(app)
-      .get('/')
+      .get('/add?a=2&b=5')
       .expect(200)
       .end((err, res) => {
-        expect(res.body.status).to.equal('on')
+        expect(res.body.result).to.equal(7)
         done()
       })
   })
