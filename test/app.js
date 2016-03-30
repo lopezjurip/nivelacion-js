@@ -18,6 +18,16 @@ describe('loading express', function () {
       })
   })
 
+  it('responds to /add', done => {
+    request(app)
+      .get('/add?a=60&b=32')
+      .expect(200)
+      .end((err, res) => {
+        expect(res.body.result).to.equal(60 + 32)
+        done()
+      })
+  })
+
   it('404 everything else', done => {
     request(app)
       .get('/foo/bar')
